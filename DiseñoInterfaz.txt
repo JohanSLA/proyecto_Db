@@ -1,0 +1,11 @@
+código de letra: SandyBrown
+
+color del fondo de los paneles: 44; 41; 46  (Es gris claro)
+
+
+
+---------------------Letra---------------------------------------
+
+Tipo de letra de links de administración: Century Gothic
+Tamaño de letra:10
+Estilo de fuente:Normal
