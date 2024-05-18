@@ -13,28 +13,10 @@ CREATE TABLE IF NOT EXISTS usuario (
     nivel VARCHAR(100)
 );
 
--- Crea la tabla empleado en caso de que no exista
-CREATE TABLE IF NOT EXISTS empleado (
-    codigo VARCHAR(50) PRIMARY KEY,
-    cedula VARCHAR(100),
-    nombreCompleto VARCHAR(100),
-    direccion VARCHAR(100),
-    telefono VARCHAR(20)
-);
-
 -- Crea la tabla profesion en caso de que no exista
 CREATE TABLE IF NOT EXISTS profesion (
     codigo VARCHAR(50) PRIMARY KEY,
     nombre VARCHAR(100)    
-);
-
--- Crea la tabla detalleEmpleadoProfesion en caso de que no exista
-CREATE TABLE IF NOT EXISTS detalleEmpleadoProfesion (
-    empleado_codigo VARCHAR(50),
-    profesion_codigo VARCHAR(50),
-    PRIMARY KEY (empleado_codigo, profesion_codigo),
-    FOREIGN KEY (empleado_codigo) REFERENCES empleado(codigo),
-    FOREIGN KEY (profesion_codigo) REFERENCES profesion(codigo)   
 );
 
 -- Crea la tabla cargo en caso de que no exista
@@ -70,6 +52,37 @@ CREATE TABLE IF NOT EXISTS sucursal (
     nombre VARCHAR(200),
     direccion VARCHAR(250),
     presupuesto DOUBLE  
+);
+
+-- Crea la tabla contrato en caso de que no exista
+CREATE TABLE IF NOT EXISTS contrato (
+    codigo VARCHAR(50) PRIMARY KEY,
+    fechaInicio DATE,
+    fechaFinalizacion DATE,
+    fechaContrato DATE,
+    sucursal_codigo VARCHAR(50),
+    FOREIGN KEY (sucursal_codigo) REFERENCES sucursal(codigo)
+
+);
+
+-- Crea la tabla empleado en caso de que no exista
+CREATE TABLE IF NOT EXISTS empleado (
+    codigo VARCHAR(50) PRIMARY KEY,
+    cedula VARCHAR(100),
+    nombreCompleto VARCHAR(100),
+    direccion VARCHAR(100),
+    telefono VARCHAR(20),
+    contrato_codigo VARCHAR(50) UNIQUE,
+    FOREIGN KEY (contrato_codigo) REFERENCES contrato(codigo)
+);
+
+-- Crea la tabla detalleEmpleadoProfesion en caso de que no exista
+CREATE TABLE IF NOT EXISTS detalleEmpleadoProfesion (
+    empleado_codigo VARCHAR(50),
+    profesion_codigo VARCHAR(50),
+    PRIMARY KEY (empleado_codigo, profesion_codigo),
+    FOREIGN KEY (empleado_codigo) REFERENCES empleado(codigo),
+    FOREIGN KEY (profesion_codigo) REFERENCES profesion(codigo)   
 );
 
 -- Crea la tabla departamento en caso de que no exista
