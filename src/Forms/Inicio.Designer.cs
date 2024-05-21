@@ -48,13 +48,14 @@
             this.linkLabelPerfil = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControlVistaTuplas = new System.Windows.Forms.TabControl();
-            this.vistaPreviaSucursales = new System.Windows.Forms.TabPage();
             this.vistaPreviaPaises = new System.Windows.Forms.TabPage();
             this.vistaPreviaDepartamento = new System.Windows.Forms.TabPage();
             this.vistaPreviaMunicipio = new System.Windows.Forms.TabPage();
             this.vistaPreviaPersona = new System.Windows.Forms.TabPage();
             this.vistaPreviaContrato = new System.Windows.Forms.TabPage();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.vistaPreviaSucursales = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.tabControlVistaTuplas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.vistaPreviaSucursales.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -296,17 +298,6 @@
             this.tabControlVistaTuplas.TabIndex = 0;
             this.tabControlVistaTuplas.SelectedIndexChanged += new System.EventHandler(this.tabControlVistaTuplas_SelectedIndexChanged);
             // 
-            // vistaPreviaSucursales
-            // 
-            this.vistaPreviaSucursales.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vistaPreviaSucursales.Location = new System.Drawing.Point(4, 22);
-            this.vistaPreviaSucursales.Name = "vistaPreviaSucursales";
-            this.vistaPreviaSucursales.Padding = new System.Windows.Forms.Padding(3);
-            this.vistaPreviaSucursales.Size = new System.Drawing.Size(463, 320);
-            this.vistaPreviaSucursales.TabIndex = 0;
-            this.vistaPreviaSucursales.Text = "Sucursales";
-            this.vistaPreviaSucursales.UseVisualStyleBackColor = true;
-            // 
             // vistaPreviaPaises
             // 
             this.vistaPreviaPaises.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,6 +357,26 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(179, 148);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 16);
+            this.linkLabel1.TabIndex = 0;
+            // 
+            // vistaPreviaSucursales
+            // 
+            this.vistaPreviaSucursales.Controls.Add(this.linkLabel1);
+            this.vistaPreviaSucursales.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaSucursales.Location = new System.Drawing.Point(4, 22);
+            this.vistaPreviaSucursales.Name = "vistaPreviaSucursales";
+            this.vistaPreviaSucursales.Padding = new System.Windows.Forms.Padding(3);
+            this.vistaPreviaSucursales.Size = new System.Drawing.Size(463, 320);
+            this.vistaPreviaSucursales.TabIndex = 0;
+            this.vistaPreviaSucursales.Text = "Sucursales";
+            this.vistaPreviaSucursales.UseVisualStyleBackColor = true;
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,6 +406,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tabControlVistaTuplas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.vistaPreviaSucursales.ResumeLayout(false);
+            this.vistaPreviaSucursales.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -416,7 +429,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabControl tabControlVistaTuplas;
-        private System.Windows.Forms.TabPage vistaPreviaSucursales;
         private System.Windows.Forms.TabPage vistaPreviaPaises;
         private System.Windows.Forms.TabPage vistaPreviaDepartamento;
         private System.Windows.Forms.TabPage vistaPreviaMunicipio;
@@ -426,6 +438,8 @@
         private System.Windows.Forms.LinkLabel linkLabelPerfil;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TabPage vistaPreviaSucursales;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

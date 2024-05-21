@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,42 +57,11 @@ namespace proyecto_db
         private void linkLabelPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
-            try
-            {
-                //Crea la conexion a la db
-                ConexionMysql conection = new ConexionMysql();
+            using (login ventanaLogin = new login(linkLabelPerfil))
 
-                // Obtener la conexión a la base de datos
-                MySqlConnection con = conection.GetConnection();
-
-
-
-
-                // Definir la consulta SQL para la inserción
-                string sqlInsert = "INSERT INTO usuarios (id, nombre, email, contrasena) VALUES (@id, @nombre, @email, @contrasena)";
-
-                // Crear un comando para ejecutar la consulta SQL
-                MySqlCommand cmd = new MySqlCommand(sqlInsert, con);
-
-                // Asignar valores a los parámetros de la consulta
-                cmd.Parameters.AddWithValue("@id", 1);
-                cmd.Parameters.AddWithValue("@nombre", "nombre_de_prueba");
-                cmd.Parameters.AddWithValue("@email", "correo_de_prueba@example.com");
-                cmd.Parameters.AddWithValue("@contrasena", "contraseña_de_prueba");
-
-                // Ejecutar la consulta de inserción
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                Console.WriteLine("Regristo agregado con exito a la base de datos");
-
-            }
-            catch {
-                Console.WriteLine("Ocurrio un error al ingresar el registro a la base de datos" + e);
-            }
-           
-
-
-            //Voy acaaaaaa----------------------------------
+                //Permite abrir otro formulario bloqueando el anterior
+                //No lo desbloquea hasta que termines el formulario que esta encima
+                ventanaLogin.ShowDialog();
 
 
 

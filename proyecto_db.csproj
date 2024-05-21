@@ -103,11 +103,11 @@
   <ItemGroup>
     <Compile Include="src\conexion_db\Conexion.cs" />
     <Compile Include="src\conexion_db\ConexionMysql.cs" />
-    <Compile Include="src\Forms\Form1.cs">
+    <Compile Include="src\Forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="src\Forms\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Forms\Login.cs">
       <SubType>Form</SubType>
@@ -117,8 +117,8 @@
     </Compile>
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="src\Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="src\Forms\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -133,6 +133,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CreacionDb\Dockerfile" />
     <None Include="src\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,6 +152,7 @@
     <None Include="imagenes\inicio.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreacionDb\init.sql" />
     <Content Include="src\icono.ico" />
     <None Include="imagenes\usernameInicioSecion.png" />
     <None Include="imagenes\inicio Secion.png" />
