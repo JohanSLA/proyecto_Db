@@ -34,7 +34,7 @@
             this.textBoxContrasena = new System.Windows.Forms.TextBox();
             this.buttonIniciarSecion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabelRegistrarse = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +51,11 @@
             // 
             this.textBoxUsuario.BackColor = System.Drawing.Color.Black;
             this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsuario.ForeColor = System.Drawing.Color.White;
             this.textBoxUsuario.Location = new System.Drawing.Point(130, 190);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(131, 21);
+            this.textBoxUsuario.Size = new System.Drawing.Size(131, 20);
             this.textBoxUsuario.TabIndex = 1;
             this.textBoxUsuario.Text = "Username";
             this.textBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,18 +64,18 @@
             // 
             this.textBoxContrasena.BackColor = System.Drawing.Color.Black;
             this.textBoxContrasena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxContrasena.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContrasena.ForeColor = System.Drawing.Color.White;
             this.textBoxContrasena.Location = new System.Drawing.Point(130, 234);
             this.textBoxContrasena.Name = "textBoxContrasena";
-            this.textBoxContrasena.Size = new System.Drawing.Size(131, 21);
+            this.textBoxContrasena.Size = new System.Drawing.Size(131, 20);
             this.textBoxContrasena.TabIndex = 2;
             this.textBoxContrasena.Text = "Password";
             this.textBoxContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonIniciarSecion
             // 
-            this.buttonIniciarSecion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIniciarSecion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciarSecion.Location = new System.Drawing.Point(150, 278);
             this.buttonIniciarSecion.Name = "buttonIniciarSecion";
             this.buttonIniciarSecion.Size = new System.Drawing.Size(95, 23);
@@ -94,19 +94,19 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "¿No eres miembro?";
             // 
-            // linkLabel1
+            // linkLabelRegistrarse
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ImageKey = "(ninguno)";
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(167, 378);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(63, 16);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Registrarse";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabelRegistrarse.AutoSize = true;
+            this.linkLabelRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelRegistrarse.ImageKey = "(ninguno)";
+            this.linkLabelRegistrarse.LinkColor = System.Drawing.Color.White;
+            this.linkLabelRegistrarse.Location = new System.Drawing.Point(167, 378);
+            this.linkLabelRegistrarse.Name = "linkLabelRegistrarse";
+            this.linkLabelRegistrarse.Size = new System.Drawing.Size(60, 13);
+            this.linkLabelRegistrarse.TabIndex = 5;
+            this.linkLabelRegistrarse.TabStop = true;
+            this.linkLabelRegistrarse.Text = "Registrarse";
+            this.linkLabelRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegistrarse);
             // 
             // login
             // 
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(384, 461);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabelRegistrarse);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonIniciarSecion);
             this.Controls.Add(this.textBoxContrasena);
@@ -138,6 +138,6 @@
         private System.Windows.Forms.TextBox textBoxContrasena;
         private System.Windows.Forms.Button buttonIniciarSecion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabelRegistrarse;
     }
 }

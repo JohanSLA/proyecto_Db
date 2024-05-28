@@ -24,11 +24,6 @@ namespace proyecto_db
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
         /**
          * Metodo por el cual el usuario da click en el boton iniciar seccion del login
          * Busca en la base de datos un usuario con ese email y clave
@@ -70,6 +65,7 @@ namespace proyecto_db
             Console.WriteLine("entro a verificacion loguin");
 
             bool usuarioExiste = false;
+
             try
             {
                 //Crea la conexion a la db
@@ -139,6 +135,19 @@ namespace proyecto_db
             {
                 return true;
             }
+
+        }
+
+        /**
+         * Metodo que se ejecuta si se da click en el link de registrarse de la pantalla de inicio
+         */
+        private void linkRegistrarse(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            using (Registrarse ventanaRegistrarse = new Registrarse())
+
+                //Permite abrir otro formulario bloqueando el anterior
+                //No lo desbloquea hasta que termines el formulario que esta encima
+                ventanaRegistrarse.ShowDialog();
 
         }
     }

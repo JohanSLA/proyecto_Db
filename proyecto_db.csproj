@@ -101,6 +101,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Forms\Registrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Registrarse.Designer.cs">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\conexion_db\Conexion.cs" />
     <Compile Include="src\conexion_db\ConexionMysql.cs" />
     <Compile Include="src\Forms\Inicio.cs">
@@ -133,6 +139,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="src\Forms\Registrarse.resx">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="CreacionDb\Dockerfile" />
     <None Include="src\packages.config" />
     <None Include="Properties\Settings.settings">

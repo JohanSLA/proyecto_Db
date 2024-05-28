@@ -41,3 +41,47 @@ C:\Base de datos 1\proyecto_Db\bin\Debug\System.Numerics.Vectors.xml
 C:\Base de datos 1\proyecto_Db\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Base de datos 1\proyecto_Db\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Base de datos 1\proyecto_Db\obj\Debug\proyecto.CACCDA45.Up2Date
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\proyecto_db.exe.config
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\proyecto_db.exe
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\proyecto_db.pdb
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\Google.Protobuf.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\MySql.Data.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Buffers.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.IO.Pipelines.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Memory.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\ZstdSharp.dll
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\Google.Protobuf.pdb
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\Google.Protobuf.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\MySql.Data.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Buffers.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.IO.Pipelines.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Memory.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\johan\source\repos\proyecto_Db\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.csproj.AssemblyReference.cache
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.inicio.resources
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.login.resources
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.Properties.Resources.resources
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.csproj.GenerateResource.cache
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.csproj.CoreCompileInputs.cache
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto.CACCDA45.Up2Date
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.exe
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.pdb
+C:\Users\johan\source\repos\proyecto_Db\obj\Debug\proyecto_db.Registrarse.resources
