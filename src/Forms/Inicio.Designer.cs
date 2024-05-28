@@ -48,14 +48,14 @@
             this.linkLabelPerfil = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControlVistaTuplas = new System.Windows.Forms.TabControl();
+            this.vistaPreviaSucursales = new System.Windows.Forms.TabPage();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.vistaPreviaPaises = new System.Windows.Forms.TabPage();
             this.vistaPreviaDepartamento = new System.Windows.Forms.TabPage();
             this.vistaPreviaMunicipio = new System.Windows.Forms.TabPage();
             this.vistaPreviaPersona = new System.Windows.Forms.TabPage();
             this.vistaPreviaContrato = new System.Windows.Forms.TabPage();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.vistaPreviaSucursales = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,8 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.tabControlVistaTuplas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.vistaPreviaSucursales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -165,11 +165,11 @@
             // linkLabelAdminContratos
             // 
             this.linkLabelAdminContratos.AutoSize = true;
-            this.linkLabelAdminContratos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAdminContratos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelAdminContratos.LinkColor = System.Drawing.Color.White;
             this.linkLabelAdminContratos.Location = new System.Drawing.Point(58, 403);
             this.linkLabelAdminContratos.Name = "linkLabelAdminContratos";
-            this.linkLabelAdminContratos.Size = new System.Drawing.Size(170, 17);
+            this.linkLabelAdminContratos.Size = new System.Drawing.Size(153, 16);
             this.linkLabelAdminContratos.TabIndex = 6;
             this.linkLabelAdminContratos.TabStop = true;
             this.linkLabelAdminContratos.Text = "Administración contratos";
@@ -177,11 +177,11 @@
             // linkLabelPersonas
             // 
             this.linkLabelPersonas.AutoSize = true;
-            this.linkLabelPersonas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelPersonas.LinkColor = System.Drawing.Color.White;
             this.linkLabelPersonas.Location = new System.Drawing.Point(58, 355);
             this.linkLabelPersonas.Name = "linkLabelPersonas";
-            this.linkLabelPersonas.Size = new System.Drawing.Size(165, 17);
+            this.linkLabelPersonas.Size = new System.Drawing.Size(155, 16);
             this.linkLabelPersonas.TabIndex = 5;
             this.linkLabelPersonas.TabStop = true;
             this.linkLabelPersonas.Text = "Administración personas";
@@ -189,11 +189,11 @@
             // linkLabelAdminMunicipio
             // 
             this.linkLabelAdminMunicipio.AutoSize = true;
-            this.linkLabelAdminMunicipio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAdminMunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelAdminMunicipio.LinkColor = System.Drawing.Color.White;
             this.linkLabelAdminMunicipio.Location = new System.Drawing.Point(58, 306);
             this.linkLabelAdminMunicipio.Name = "linkLabelAdminMunicipio";
-            this.linkLabelAdminMunicipio.Size = new System.Drawing.Size(172, 17);
+            this.linkLabelAdminMunicipio.Size = new System.Drawing.Size(155, 16);
             this.linkLabelAdminMunicipio.TabIndex = 4;
             this.linkLabelAdminMunicipio.TabStop = true;
             this.linkLabelAdminMunicipio.Text = "Administración municipio";
@@ -201,11 +201,11 @@
             // linkLabelAdminDepartamento
             // 
             this.linkLabelAdminDepartamento.AutoSize = true;
-            this.linkLabelAdminDepartamento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAdminDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelAdminDepartamento.LinkColor = System.Drawing.Color.White;
             this.linkLabelAdminDepartamento.Location = new System.Drawing.Point(58, 260);
             this.linkLabelAdminDepartamento.Name = "linkLabelAdminDepartamento";
-            this.linkLabelAdminDepartamento.Size = new System.Drawing.Size(204, 17);
+            this.linkLabelAdminDepartamento.Size = new System.Drawing.Size(182, 16);
             this.linkLabelAdminDepartamento.TabIndex = 3;
             this.linkLabelAdminDepartamento.TabStop = true;
             this.linkLabelAdminDepartamento.Text = "Administración departamento";
@@ -213,11 +213,11 @@
             // linkLabelAdminPaises
             // 
             this.linkLabelAdminPaises.AutoSize = true;
-            this.linkLabelAdminPaises.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAdminPaises.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelAdminPaises.LinkColor = System.Drawing.Color.White;
             this.linkLabelAdminPaises.Location = new System.Drawing.Point(58, 210);
             this.linkLabelAdminPaises.Name = "linkLabelAdminPaises";
-            this.linkLabelAdminPaises.Size = new System.Drawing.Size(147, 17);
+            this.linkLabelAdminPaises.Size = new System.Drawing.Size(139, 16);
             this.linkLabelAdminPaises.TabIndex = 2;
             this.linkLabelAdminPaises.TabStop = true;
             this.linkLabelAdminPaises.Text = "Administración paises";
@@ -225,11 +225,11 @@
             // linkLabelAdminSucursales
             // 
             this.linkLabelAdminSucursales.AutoSize = true;
-            this.linkLabelAdminSucursales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAdminSucursales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelAdminSucursales.LinkColor = System.Drawing.Color.White;
             this.linkLabelAdminSucursales.Location = new System.Drawing.Point(58, 157);
             this.linkLabelAdminSucursales.Name = "linkLabelAdminSucursales";
-            this.linkLabelAdminSucursales.Size = new System.Drawing.Size(171, 17);
+            this.linkLabelAdminSucursales.Size = new System.Drawing.Size(163, 16);
             this.linkLabelAdminSucursales.TabIndex = 1;
             this.linkLabelAdminSucursales.TabStop = true;
             this.linkLabelAdminSucursales.Text = "Administración sucursales";
@@ -249,7 +249,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.Image = global::proyecto_db.Properties.Resources.inicioLogin;
-            this.pictureBox8.Location = new System.Drawing.Point(474, 21);
+            this.pictureBox8.Location = new System.Drawing.Point(445, 19);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(38, 35);
             this.pictureBox8.TabIndex = 8;
@@ -261,7 +261,7 @@
             this.linkLabelPerfil.AutoSize = true;
             this.linkLabelPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelPerfil.LinkColor = System.Drawing.Color.White;
-            this.linkLabelPerfil.Location = new System.Drawing.Point(471, 55);
+            this.linkLabelPerfil.Location = new System.Drawing.Point(442, 53);
             this.linkLabelPerfil.Name = "linkLabelPerfil";
             this.linkLabelPerfil.Size = new System.Drawing.Size(37, 16);
             this.linkLabelPerfil.TabIndex = 2;
@@ -272,11 +272,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 44);
+            this.label1.Size = new System.Drawing.Size(375, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vista previa de tuplas";
             // 
@@ -298,9 +298,29 @@
             this.tabControlVistaTuplas.TabIndex = 0;
             this.tabControlVistaTuplas.SelectedIndexChanged += new System.EventHandler(this.tabControlVistaTuplas_SelectedIndexChanged);
             // 
+            // vistaPreviaSucursales
+            // 
+            this.vistaPreviaSucursales.Controls.Add(this.linkLabel1);
+            this.vistaPreviaSucursales.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaSucursales.Location = new System.Drawing.Point(4, 22);
+            this.vistaPreviaSucursales.Name = "vistaPreviaSucursales";
+            this.vistaPreviaSucursales.Padding = new System.Windows.Forms.Padding(3);
+            this.vistaPreviaSucursales.Size = new System.Drawing.Size(463, 320);
+            this.vistaPreviaSucursales.TabIndex = 0;
+            this.vistaPreviaSucursales.Text = "Sucursales";
+            this.vistaPreviaSucursales.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(179, 148);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 13);
+            this.linkLabel1.TabIndex = 0;
+            // 
             // vistaPreviaPaises
             // 
-            this.vistaPreviaPaises.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaPaises.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vistaPreviaPaises.Location = new System.Drawing.Point(4, 22);
             this.vistaPreviaPaises.Name = "vistaPreviaPaises";
             this.vistaPreviaPaises.Padding = new System.Windows.Forms.Padding(3);
@@ -311,7 +331,7 @@
             // 
             // vistaPreviaDepartamento
             // 
-            this.vistaPreviaDepartamento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vistaPreviaDepartamento.Location = new System.Drawing.Point(4, 22);
             this.vistaPreviaDepartamento.Name = "vistaPreviaDepartamento";
             this.vistaPreviaDepartamento.Padding = new System.Windows.Forms.Padding(3);
@@ -322,7 +342,7 @@
             // 
             // vistaPreviaMunicipio
             // 
-            this.vistaPreviaMunicipio.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaMunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vistaPreviaMunicipio.Location = new System.Drawing.Point(4, 22);
             this.vistaPreviaMunicipio.Name = "vistaPreviaMunicipio";
             this.vistaPreviaMunicipio.Padding = new System.Windows.Forms.Padding(3);
@@ -333,7 +353,7 @@
             // 
             // vistaPreviaPersona
             // 
-            this.vistaPreviaPersona.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaPersona.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vistaPreviaPersona.Location = new System.Drawing.Point(4, 22);
             this.vistaPreviaPersona.Name = "vistaPreviaPersona";
             this.vistaPreviaPersona.Padding = new System.Windows.Forms.Padding(3);
@@ -344,7 +364,7 @@
             // 
             // vistaPreviaContrato
             // 
-            this.vistaPreviaContrato.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vistaPreviaContrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vistaPreviaContrato.Location = new System.Drawing.Point(4, 22);
             this.vistaPreviaContrato.Name = "vistaPreviaContrato";
             this.vistaPreviaContrato.Padding = new System.Windows.Forms.Padding(3);
@@ -356,26 +376,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(179, 148);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(0, 16);
-            this.linkLabel1.TabIndex = 0;
-            // 
-            // vistaPreviaSucursales
-            // 
-            this.vistaPreviaSucursales.Controls.Add(this.linkLabel1);
-            this.vistaPreviaSucursales.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vistaPreviaSucursales.Location = new System.Drawing.Point(4, 22);
-            this.vistaPreviaSucursales.Name = "vistaPreviaSucursales";
-            this.vistaPreviaSucursales.Padding = new System.Windows.Forms.Padding(3);
-            this.vistaPreviaSucursales.Size = new System.Drawing.Size(463, 320);
-            this.vistaPreviaSucursales.TabIndex = 0;
-            this.vistaPreviaSucursales.Text = "Sucursales";
-            this.vistaPreviaSucursales.UseVisualStyleBackColor = true;
             // 
             // inicio
             // 
@@ -405,9 +405,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tabControlVistaTuplas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.vistaPreviaSucursales.ResumeLayout(false);
             this.vistaPreviaSucursales.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }

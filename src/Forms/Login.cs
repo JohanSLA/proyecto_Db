@@ -14,6 +14,16 @@ namespace proyecto_db
 {
     public partial class login : Form
     {
+        // Propiedad pública para almacenar el nombre de usuario
+        public string nombreUsuario;
+
+        // Propiedad para almacenar el nombre de usuario
+        public string NombreUsuario
+        {
+            get { return nombreUsuario; }
+            set { nombreUsuario = value; }
+        }
+
         public login(LinkLabel linkLabelPerfil)
         {
             InitializeComponent();
@@ -30,37 +40,39 @@ namespace proyecto_db
          */
         private void buttonIniciarSecion_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("1");
 
-            //Variable que controlara si el usuario lleno los campos de email y contraseña
-            bool verificacionCajasTexto = false;
-
-            verificacionCajasTexto = verificarCajasTexto();
+            // Variable que controlará si el usuario llenó los campos de email y contraseña
+            bool verificacionCajasTexto = verificarCajasTexto();
 
             if (verificacionCajasTexto == true)
             {
-                
-                //LLama al metodo que verifica si hay un registro que contenga ese usuario(email) y esa contraseña
-                bool verificacionLogin= verificarLogin(textBoxUsuario.Text, textBoxContrasena.Text);
+                // Llama al método que verifica si hay un registro que contenga ese usuario (email) y esa contraseña
+                bool existe = verificarUsuario(textBoxUsuario.Text, textBoxContrasena.Text);
 
-                if (verificacionLogin == true)
+                if (existe == true)  // Aquí debes comparar el resultado de la invocación del método
                 {
-                    //Habilita los botones y cambia el link al nombre del usuario
-                    Console.WriteLine("Logueo exitoso");
+                    // Habilita los botones y cambia el link al nombre del usuario
+                    Console.WriteLine("Bank: Logueo exitoso");
+                    // Habilita los botones y cambia el link al nombre del usuario
+                    MessageBox.Show("Logueo exitoso"+" Bienvenido "+textBoxUsuario.Text, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    NombreUsuario = textBoxUsuario.Text;
+                    this.Close();
                 }
                 else
                 {
-                    //indica con un cuadro de dialogo sobre el error de acceso 
-                    Console.WriteLine("Logueo erroneo");
+                    // Indica con un cuadro de diálogo sobre el error de acceso
+                    Console.WriteLine("Bank: Logueo erroneo");
+                    // Ejemplo de cómo mostrar un mensaje de error
+                    MessageBox.Show("Ha ocurrido un error en el login, intenatlo nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
         }
+
 
         /**
          * Metodo el cual verifica si hay un registro que tenga ese correo y esa contraseña
          */
-        private bool verificarLogin(string login, string clave)
+        private bool verificarUsuario(string login, string clave)
         {
             Console.WriteLine("entro a verificacion loguin");
 
@@ -68,52 +80,45 @@ namespace proyecto_db
 
             try
             {
-                //Crea la conexion a la db
+                // Crea la conexion a la db
                 ConexionMysql conection = new ConexionMysql();
 
                 // Obtener la conexión a la base de datos
-                MySqlConnection con = conection.GetConnection();
-
-
-                Task.Delay(5000);  // Esperar 5 segundos de forma asíncrona
-
-                // Definir la consulta SQL para la inserción
-                string query = "SELECT COUNT(*) FROM usuario WHERE login = @login AND clave = @clave";
-
-                // Crear un comando para ejecutar la consulta SQL
-                MySqlCommand cmd = new MySqlCommand(query, con);
-
-                cmd.Parameters.AddWithValue("@login", login);
-                cmd.Parameters.AddWithValue("@clave", clave);
-
-
-                try
+                using (MySqlConnection con = conection.GetConnection())
                 {
-                    int count = (int)cmd.ExecuteScalar();
-                    usuarioExiste = (count > 0);
-                }
-                catch (Exception ex)
-                {
-                    // Manejo de excepciones
-                    Console.WriteLine("Ocurrió un error: " + ex.Message);
-                }
+                    // Esperar 5 segundos de forma sincrónica
+                    System.Threading.Thread.Sleep(5000);
 
-                //Retorna si existe
-                return usuarioExiste;
+                    // Definir la consulta SQL para la inserción
+                    string query = "SELECT COUNT(*) FROM usuario WHERE login = @login AND clave = @clave";
 
+                    // Crear un comando para ejecutar la consulta SQL
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@login", login);
+                        cmd.Parameters.AddWithValue("@clave", clave);
+
+                        try
+                        {
+                            
+                            int count = Convert.ToInt32(cmd.ExecuteScalar());
+                            usuarioExiste = (count > 0);
+                        }
+                        catch (Exception ex)
+                        {
+                            // Manejo de excepciones
+                            Console.WriteLine("Ocurrió un error: " + ex.Message);
+                        }
+                    }
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                Console.WriteLine("Ocurrio un error al loguearse");
+                Console.WriteLine("Ocurrió un error al loguearse: " + ex.Message);
             }
 
-
-
-
-
-
-
-            throw new NotImplementedException();
+            // Retorna si existe
+            return usuarioExiste;
         }
 
         /**
@@ -143,12 +148,13 @@ namespace proyecto_db
          */
         private void linkRegistrarse(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            using (Registrarse ventanaRegistrarse = new Registrarse())
 
+            using (Registrarse ventanaRegistrarse = new Registrarse())
+            {
                 //Permite abrir otro formulario bloqueando el anterior
                 //No lo desbloquea hasta que termines el formulario que esta encima
                 ventanaRegistrarse.ShowDialog();
-
+            }
         }
     }
 }

@@ -105,6 +105,7 @@
             this.buttonCancelar.TabIndex = 13;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // textBoxContrasena
             // 
@@ -145,6 +146,7 @@
             this.buttonRegistrarse.TabIndex = 6;
             this.buttonRegistrarse.Text = "Registrarse";
             this.buttonRegistrarse.UseVisualStyleBackColor = true;
+            this.buttonRegistrarse.Click += new System.EventHandler(this.buttonRegistrarse_Click);
             // 
             // Registrarse
             // 

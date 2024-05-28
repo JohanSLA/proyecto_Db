@@ -18,6 +18,7 @@ namespace proyecto_db
         public inicio()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,15 +57,49 @@ namespace proyecto_db
          */
         private void linkLabelPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             using (login ventanaLogin = new login(linkLabelPerfil))
+            {
+                
+                    // Suscribirse al evento FormClosed
+                    ventanaLogin.FormClosed += VentanaLogin_FormClosed;
 
-                //Permite abrir otro formulario bloqueando el anterior
-                //No lo desbloquea hasta que termines el formulario que esta encima
-                ventanaLogin.ShowDialog();
+                    // Mostrar el formulario de inicio de sesión
+                    ventanaLogin.ShowDialog();
+                
+
+                
+            }
+
+        }
+
+        private void VentanaLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Este método se ejecutará cuando el formulario de inicio de sesión se cierre
+            // Obtener el nombre de usuario del formulario de inicio de sesión
+            string nombreUsuario = ((login)sender).NombreUsuario;
+
+            if (nombreUsuario!=null)
+            {
+                // Actualizar el texto del LinkLabel en el formulario principal con el nombre de usuario
+                linkLabelPerfil.Text = nombreUsuario;
+            }
+            else
+            {
+                //En caso de salir de los formularios, se deja el link label con el nombre predertermiando
+                linkLabelPerfil.Text = "Perfil";
+            }
 
 
 
+
+            //Habilita los botones para la gestion de la base de datos
+            linkLabelAdminSucursales.Enabled = true;
+            linkLabelAdminPaises.Enabled = true;
+            linkLabelAdminDepartamento.Enabled = true;
+            linkLabelAdminMunicipio.Enabled = true;
+            linkLabelPersonas.Enabled = true;
+            linkLabelAdminContratos.Enabled = true;
+            tabControlVistaTuplas.Enabled = true;
         }
     }
 }
